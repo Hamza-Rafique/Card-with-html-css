@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color:#70bee6 !important;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: #fff;
+  width: 22rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.1), 1px 3px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(5px);
+}
+.card .image-box {
+  height: 30vh;
+  border-radius: inherit;
+  border: none;
+  background: #70bee6;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+}
+.card .card-content {
+  padding: 1.3rem;
+}
+.card .tag {
+  border: 1px solid #70bee6;
+  padding: 0.3rem 1rem;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+.card .card-title {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.card .sub-title {
+  color: gray;
+}
+.card .rating {
+  margin-top: 0.5rem;
+}
+.card .rating .fas {
+  color: gold;
+}
+.card .price-box {
+  display: flex;
+  margin-top: 0.6rem;
+  gap: 1rem;
+}
+.card .price-box p {
+  color: black;
+  font-weight: bold;
+}
+.card .price-box p::before {
+  content: "$";
+  margin-right: 2px;
+  color: gray;
+}
+.card .price-box .old-price {
+  text-decoration: line-through;
+  font-weight: normal;
+  color: gray;
+}
+.card .btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background: none;
+  border: 2px solid #70bee6;
+  transition: 0.3s ease;
+}
+.card .btn:hover {
+  cursor: pointer;
+  background: #70bee6;
+  color: #fff;
+}
